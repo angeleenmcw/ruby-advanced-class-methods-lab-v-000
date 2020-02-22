@@ -47,8 +47,8 @@ class Song
    end
   
   def self.alphabetical
-    @@all.sort_by{|song2, song3| song2 <=> song3}
-  end
+    self.all.sort_by { |song| song.name }
+  end 
   
   def self.new_from_filename(name)
     x = name.gsub('.mp3', '').split(/\-/)
