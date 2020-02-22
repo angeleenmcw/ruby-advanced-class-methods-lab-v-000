@@ -43,7 +43,7 @@ class Song
      if name == name
        name
      else
-       self.create_by_name
+       self.create_by_name(name)
      end
    name
    end
